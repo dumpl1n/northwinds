@@ -128,3 +128,61 @@ Runtime Error
 [0m20:43:59.829790 [debug] [MainThread]: Command `dbt run` failed at 20:43:59.829709 after 0.03 seconds
 [0m20:43:59.829994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055302d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10515e0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e10610>]}
 [0m20:43:59.830194 [debug] [MainThread]: Flushing usage events
+[0m14:33:49.169270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114c1f550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114502a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114502890>]}
+
+
+============================== 14:33:49.171374 | 4255fe87-6ab4-40a5-ba12-5b0fb161fbe0 ==============================
+[0m14:33:49.171374 [info ] [MainThread]: Running with dbt=1.7.6
+[0m14:33:49.171664 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/kielay/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m14:33:49.171969 [info ] [MainThread]: dbt version: 1.7.6
+[0m14:33:49.172147 [info ] [MainThread]: python version: 3.11.5
+[0m14:33:49.172303 [info ] [MainThread]: python path: /Users/kielay/Developer/learn/jigsaw/dbt/northwinds-setup/codebase/venv/bin/python3
+[0m14:33:49.172455 [info ] [MainThread]: os info: macOS-14.2.1-arm64-arm-64bit
+[0m14:33:49.357893 [info ] [MainThread]: Using profiles dir at /Users/kielay/.dbt
+[0m14:33:49.358183 [info ] [MainThread]: Using profiles.yml file at /Users/kielay/.dbt/profiles.yml
+[0m14:33:49.358347 [info ] [MainThread]: Using dbt_project.yml file at /Users/kielay/Developer/learn/jigsaw/dbt/northwinds-setup/codebase/dbt_project.yml
+[0m14:33:49.358644 [info ] [MainThread]: adapter type: postgres
+[0m14:33:49.358838 [info ] [MainThread]: adapter version: 1.7.6
+[0m14:33:49.359007 [info ] [MainThread]: Configuration:
+[0m14:33:49.359151 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:33:49.359288 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:33:49.359425 [info ] [MainThread]: Required dependencies:
+[0m14:33:49.359603 [debug] [MainThread]: Executing "git --help"
+[0m14:33:49.366007 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:33:49.366483 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:49.366724 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:33:49.366893 [info ] [MainThread]: Connection:
+[0m14:33:49.367073 [info ] [MainThread]:   host: localhost
+[0m14:33:49.367202 [info ] [MainThread]:   port: 5432
+[0m14:33:49.367332 [info ] [MainThread]:   user: kielay
+[0m14:33:49.367456 [info ] [MainThread]:   database: northwinds
+[0m14:33:49.367579 [info ] [MainThread]:   schema: dev
+[0m14:33:49.367701 [info ] [MainThread]:   connect_timeout: 30
+[0m14:33:49.367825 [info ] [MainThread]:   role: None
+[0m14:33:49.367951 [info ] [MainThread]:   search_path: None
+[0m14:33:49.368072 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:33:49.368197 [info ] [MainThread]:   sslmode: None
+[0m14:33:49.368318 [info ] [MainThread]:   sslcert: None
+[0m14:33:49.368440 [info ] [MainThread]:   sslkey: None
+[0m14:33:49.368577 [info ] [MainThread]:   sslrootcert: None
+[0m14:33:49.368701 [info ] [MainThread]:   application_name: dbt
+[0m14:33:49.368828 [info ] [MainThread]:   retries: 1
+[0m14:33:49.369069 [info ] [MainThread]: Registered adapter: postgres=1.7.6
+[0m14:33:49.372940 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:33:49.373416 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:33:49.373579 [debug] [MainThread]: On debug: select 1 as id
+[0m14:33:49.373723 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:33:49.391934 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:33:49.392666 [debug] [MainThread]: On debug: Close
+[0m14:33:49.392840 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:33:49.393001 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:33:49.393136 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/kielay/Developer/learn/jigsaw/dbt/northwinds-setup/codebase/dbt_project.yml> not found
+
+[0m14:33:49.400350 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.25439516, "process_user_time": 0.758932, "process_kernel_time": 0.125624, "process_mem_max_rss": "121847808", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:33:49.400701 [debug] [MainThread]: Command `dbt debug` failed at 14:33:49.400616 after 0.25 seconds
+[0m14:33:49.400922 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:33:49.401107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105740c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114502d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1159321d0>]}
+[0m14:33:49.401445 [debug] [MainThread]: Flushing usage events
