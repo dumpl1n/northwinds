@@ -1,7 +1,6 @@
-WITH source AS (
-    SELECT * FROM public.suppliers
-    ),
-
+with source as (
+select * from {{ source('rds', 'suppliers') }}
+),
 renamed AS (
     SELECT supplier_id, company_name,
         SPLIT_PART(contact_name, ' ',  1) AS contact_first_name,
