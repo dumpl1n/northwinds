@@ -1,10 +1,11 @@
 -- import CTE. similar to imports in python.
 WITH source AS (
-    SELECT * FROM{{ source('rds', 'customers')}}
+    SELECT * FROM{{ source('rds', 'customers') }}
 ),
 companies AS (
     SELECT * FROM dev.stg_rds_companies
 ),
+
 -- logical CTE
 renamed AS (
     SELECT CONCAT('rds-', customer_id) AS customer_id, 
@@ -17,12 +18,13 @@ renamed AS (
     JOIN companies 
     ON companies.company_name = customers.company_name
     ), 
+
 final AS (
     SELECT customer_id,
     first_name,
     last_name,
     CASE WHEN LENGTH(updated_phone) = 10 THEN
-        '(' || SUBSTRING(updated_phone, 1, 3) || ') ' || 
+'(' || SUBSTRING(updated_phone, 1, 3) || ') ' || 
         SUBSTRING(updated_phone, 4, 3) || '-' ||
         SUBSTRING(updated_phone, 7, 4) 
         END as phone,
@@ -31,4 +33,5 @@ final AS (
 )
 
 -- final SELECT statement
-    SELECT * FROM final
+    SELECT customer_id, first_name, last_name, phone, company_id 
+    FROM final

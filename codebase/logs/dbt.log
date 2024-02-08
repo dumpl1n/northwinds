@@ -216,3 +216,33 @@ Runtime Error
 [0m17:35:12.553484 [debug] [MainThread]: Command `dbt run` failed at 17:35:12.553420 after 0.03 seconds
 [0m17:35:12.553667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110625350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11152f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028dc8d0>]}
 [0m17:35:12.553835 [debug] [MainThread]: Flushing usage events
+[0m22:32:04.315727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114c37150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114c26750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114c27f10>]}
+
+
+============================== 22:32:04.317887 | ca554af6-dfe3-44cd-8316-24fb28cd6694 ==============================
+[0m22:32:04.317887 [info ] [MainThread]: Running with dbt=1.7.6
+[0m22:32:04.318200 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/kielay/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:32:04.318485 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/kielay/Developer/learn/jigsaw/dbt/northwinds-setup/codebase/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:32:04.319244 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.025351126, "process_user_time": 0.742456, "process_kernel_time": 0.083676, "process_mem_max_rss": "114475008", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:32:04.319514 [debug] [MainThread]: Command `dbt run` failed at 22:32:04.319448 after 0.03 seconds
+[0m22:32:04.319690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105594e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114edd810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e8ad0>]}
+[0m22:32:04.319868 [debug] [MainThread]: Flushing usage events
+[0m22:37:25.690040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107ac290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106bfd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e3d6d0>]}
+
+
+============================== 22:37:25.691852 | a574a7bd-80f6-42d2-892d-c8de8bc50dee ==============================
+[0m22:37:25.691852 [info ] [MainThread]: Running with dbt=1.7.6
+[0m22:37:25.692169 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/kielay/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m22:37:25.692442 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/kielay/Developer/learn/jigsaw/dbt/northwinds-setup/codebase/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:37:25.693125 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.024056291, "process_user_time": 0.733905, "process_kernel_time": 0.07719, "process_mem_max_rss": "115769344", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:37:25.693373 [debug] [MainThread]: Command `dbt run` failed at 22:37:25.693313 after 0.02 seconds
+[0m22:37:25.693548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e79790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1013f8dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107371d0>]}
+[0m22:37:25.693715 [debug] [MainThread]: Flushing usage events

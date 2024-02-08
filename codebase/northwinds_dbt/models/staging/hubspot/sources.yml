@@ -1,0 +1,13 @@
+
+version: 2
+
+sources:
+  - name: hubspot
+    database: northwinds  # The database where the source data is located.
+    schema: dev           # The schema in the database where source data is located.
+    tables:
+      - name: contacts
+        identifier: northwinds_hubspot  # The actual table name in database.
+      - name: companies
+        identifier: northwinds_hubspot         
+
